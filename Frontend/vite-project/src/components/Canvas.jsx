@@ -97,7 +97,7 @@ export default function Canvas()
     timeout.current = setTimeout(function () {
       const data = {"message": canvasRef.current.toDataURL("image/png")}
       socketRef.current.send(JSON.stringify(data))
-    }, 1000)
+    }, 400)
   }
 
   const getPen = () => {
